@@ -24,15 +24,10 @@ void main() {
         z.y = y;
     }
 
-	float intensity = (i == iter ? 0.0 : float(i) / iter);
-	float r = intensity * 0.70;	
-	float g = intensity * 1.00;	
-	float b = intensity * 0.25;	
-
-    //float r = (i == iter ? 0.0 : 0.70 * float(i) / iter);
-    //float g = (i == iter ? 0.0 : 1.00 * float(i) / iter);
-    //float b = (i == iter ? 0.0 : 0.25 * float(i) / iter);
+    float intensity = (i == iter ? 0.0 : float(i) / iter);
+    float r = intensity * 0.70; 
+    float g = intensity * 1.00; 
+    float b = intensity * 0.25; 
 
     color = vec4(r, g, b, 1.0);
-
 }
